@@ -1,9 +1,7 @@
-words = []
-for _ in range(5):
-    word = input()
-    words.append(word)
+words = [input() for _ in range(5)]
+max_len = max([len(s) for s in words])
 
-for i in range(15):
+for i in range(max_len):
     for j in range(5):
         try:
             print(words[j][i], end='')
