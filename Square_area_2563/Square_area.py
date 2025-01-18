@@ -1,6 +1,6 @@
 squ_num = int(input())
 sum_are = 0
-area = [[0]*100 for _ in range(100)]
+area = [[0] * 100 for _ in range(100)]
 
 for _ in range(squ_num):
     x, y = map(int, input().strip().split())
